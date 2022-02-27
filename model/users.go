@@ -8,8 +8,9 @@ type User struct {
     Email string `gorm:"type:varchar(100);not null"`
     Password string `gorm:"type:varchar(100);not null"`
     Role int `gorm:"type:int;not null"`
+    FKRole UserRole `gorm:"foreignkey:Role"`
 }
 
 func (User) TableName() string {
-    return "users"
+    return "u_users_credentials"
 }

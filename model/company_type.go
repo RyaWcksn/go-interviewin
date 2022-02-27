@@ -2,12 +2,12 @@ package model
 
 import "gorm.io/gorm"
 
-type UserRole struct {
+type CompanyType struct {
     gorm.Model
     Identifier string
     Name string
 }
 
-func (UserRole) TableName() string {
-    return "m_user_roles"
+func (CompanyType) TableName() string {
+    return "m_company_types"
 }
