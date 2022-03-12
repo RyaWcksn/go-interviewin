@@ -1,5 +1,5 @@
 package controller
 
-func Authen(username, password string) bool {
+func Auth(username, password string) bool {
     return true
 }
